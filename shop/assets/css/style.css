@@ -1,0 +1,795 @@
+html::-webkit-scrollbar{
+   display: none;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+h1,h2{
+    padding: 10% 15% 5%;
+}
+
+
+
+/*Шапка*/
+
+header{
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 5px 10px #000;
+    opacity: 1;
+    padding-left: 10%;
+    z-index: 5;
+}
+
+header nav ul li{
+    position: relative;
+    float: left;
+}
+header nav ul li a{
+    color: #000;
+    font-size: 16px;
+    display: block;
+    margin: 10px 0 10px 45px;
+}
+
+#catalog{
+    background-color: blue;
+    width: 150px;
+    height: 45px;
+    text-align: center;
+    padding: 10px;
+}
+
+
+header nav ul li button{
+    width: 100px;
+    font-size: 10px;
+    display: block;
+    margin: 0 0 20px 20px;
+    padding: 10px;
+    
+}
+
+#catalog:hover{
+    color: #FFFF00;
+}
+nav ul li ul{
+    position: absolute;
+    left: 45px;
+    width: 150px;
+    background: #fff;
+    display: none;    
+}
+ nav ul li ul li{
+    width: 100%;
+    border: 1px solid rgba(0,0,0,.1);
+    
+}
+
+nav ul li ul li a{
+    font-size: 12px;
+}
+
+
+
+nav ul li:hover > ul {
+    display: initial;
+}
+
+header .logo{
+    font-size: 20px;
+    font-weight: 900;
+    color: #000;
+    transition: 5s;
+    margin: 10px 0 10px 50px;
+}
+header .logo:hover{
+    transform: scale(1.2);
+}
+
+/* search*/
+
+#search{
+    padding: 20px;
+    font-size: 15px;
+    width: 400px;
+    height: 20px;
+    display: block;
+    margin: 10px 0 10px 20px;
+    border-color: blue;
+    position: fixed;
+}
+
+.search{
+    width: 75px;
+    height: 40px;
+    position: relative;
+    left:343px;
+    top: 12px;
+    border: none;
+}
+
+
+
+/*account*/
+.container{
+    margin: 5% auto 15% auto;
+    width: 30%;
+    position: relative;
+    top: 250px;
+    background-color: #fefefe;
+    border: .1rem solid;
+}
+.container1{
+    display: none;
+}
+.container3{
+    display: none;
+    margin: 5% auto 15% auto;
+    padding: 15px 80px;
+    width: 300px;
+    height: 200px;
+    position: relative;
+    top: 250px;
+    background-color: #fefefe;
+    border: .1rem solid;    
+}
+
+#name_log{
+    position: relative;
+    top: 20px;
+}
+
+#exit{
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    width: 50%;
+    top: 80px;
+    right: 50px;
+} 
+
+
+
+.vkl{
+    border: none;
+    background-color:#fff;
+    font-size: 20px;
+    margin: 20px 0 20px 30px;
+    padding: 10px 10px;
+}
+.vkl:hover{
+    background-color: gray;
+}
+
+
+
+.container input{
+    width: 90%;
+    padding: 10px;
+    margin: 20px;
+    background: #ddd;
+}
+.sigUpBtn{
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    left: 145px;
+} 
+
+.reg{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,.9);
+}
+
+
+.close{
+    position: absolute;
+    right: 3.5rem;
+    top: 1.5ren;
+    font-size: 4rem;
+    color: #fff;
+}
+.close:hover,
+.close:focus{
+    color: #f44336;
+    cursor: pointer;
+}
+
+/*icon*/
+
+#prof{
+    position:relative;
+    left: 430px;
+    top: 5px;
+    background-color: #fff;
+    background-image: url(../img/icon/prof.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-color: #004b9f;
+}
+#prof p{
+    background-color: #fff;
+    font-size: 15px;
+    line-height: 2.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 20px rgba(0,0,0,.8);
+    z-index: 1000;
+    transform:translate(-40%, 100%);
+    width: 75px;
+    position: absolute;
+    left: 55%;
+    text-align: center;
+    display: none;
+}
+#prof p::before{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 10px,solid transparent;
+    border-bottom-color: #fff;
+    top: -18px;
+    left: 38%;
+    
+}
+
+#prof:hover{
+    background-color: gray;
+     
+    
+}
+#prof:hover p{
+    display: block;
+}
+#basket{
+    background-color: #fff;
+    background-image: url(../img/icon/basket.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-color: #004b9f;
+    position: relative;
+    bottom: 4px;
+    left: 400px;
+}
+#basket p{
+    background-color: #fff;
+    font-size: 15px;
+    line-height: 2.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 20px rgba(0,0,0,.8);
+    z-index: 1000;
+    transform:translate(-50%, 160%);
+    width: 75px;
+    position: absolute;
+    left: 55%;
+    text-align: center;
+    display: none;
+}
+#basket p::before{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 10px,solid transparent;
+    border-bottom-color: #fff;
+    top: -18px;
+    left: 35%;
+    
+}
+
+#basket:hover{
+    background-color: gray;
+    
+}
+#basket:hover p{
+    display: block;
+    color: #000;
+}
+
+/* id */
+.id{
+    display: none
+}
+
+/* about */
+.about{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15%;
+    right: 2.5rem;
+    top: 1,trem;
+    z-index: 3;
+}
+
+
+
+
+#about_1{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15%;
+    
+}
+#about_item_1{
+     width: 200px;
+    position: relative;
+    right: 580px;
+}
+
+.about_item{
+    width: 200px;
+    padding: 0 0 20px 0;
+}
+
+.about_item_1{
+    width: 200px;
+    padding: 0 0 20px 0;
+}
+.about_item_1:hover .about_img img{
+    opacity: 0.7;
+        
+}
+        
+
+.about_item:hover .about_img img{
+    opacity: 0.7;
+        
+}
+
+
+.about_img{
+    background: linear-gradient(to bottom,#f38181,#fce38a);
+    
+}
+
+.about_img img{
+    width: 200px;
+    height: 200px;
+    display: block;
+    transition: opacity .1s linear;
+}
+/* usl */
+
+.usl {
+    margin-top: 20%;
+    background-color: #000;
+    height: 300px;
+    position: relative;
+    z-index: 100;
+}
+.usl h3{
+    padding:50px 0 15px 10%; 
+    color: #fff;
+    font-size: 15px;
+}
+
+.usl ul li{
+    padding: 0 0 15px 10%; 
+   
+}
+.usl ul li a{
+     color: #fff;
+    font-size: 14px;
+}
+.usl ul li a:hover{
+    color:#FFFF00;
+}
+
+
+/* gl,search */
+.cont_search{
+    display: none;
+}
+
+}
+/* product */
+.product{
+    
+}
+
+.text{
+    
+    padding: 0 0 0 15%;
+}
+
+.rash{
+    position: relative;
+    left: 500px;
+}
+
+/* prod */
+
+.prod_rasp{
+    display: flex;
+    margin: 15% 15% 0 0;
+    z-index: 2;
+}
+
+.prod img{
+    margin:  0 25% 0 0;
+    border: 1px solid #000;
+    width: 560px;
+    height: 560px;
+    position: relative;
+    top: 0;
+    left: 230px;
+    z-index: -100;
+   
+    
+}
+.haract{
+  position: relative;
+  left: 230px;
+  height: 900px;
+  width: 40%;
+  z-index: 2;
+}
+.haract table{
+    border-spacing: 40px 0;
+    width: 100%;
+    left: 230px;
+}
+
+
+
+
+.desc{
+    max-height: 310px;
+    overflow: hidden;
+}
+
+.open_text{
+    opacity: 0;
+    position: absolute;
+}
+
+.open_but{
+    cursor: pointer;
+    display: inline-block;
+    color: blue;
+    
+}
+
+
+.open_text ~ .open_but:after{
+    content: 'Развернуть описание';
+}
+
+.open_text:checked ~ .open_but:after{
+    content: 'Свернуть описание';
+}
+
+.open_text:checked ~ .desc{
+    max-height: none;
+} 
+
+
+/* Cena */
+.cena{
+    border: 1px solid black;
+    width: 500px;
+    height: 300px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px #000;
+    padding-left: 10px;
+    z-index: 2;
+}
+.cena p{
+    padding: 20px 0 0 25px;  
+    font-size: 25px;
+}
+.btn_cena{
+    font-size: 25px;
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #000;
+    position: relative;
+    left: 50px;
+    z-index: 2;
+} 
+.btn_cena1:hover {
+    color: yellow;
+}
+
+.btn_cena1{
+    font-size: 20px;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #000;
+    position: relative;
+    z-index: 2;
+} 
+
+
+/* basket */
+
+.del_sp{
+    position: relative;
+    left: 53%;
+    border: none;
+    background: #fff;
+    color: red;
+}
+.del_sp:hover{
+    color: #000;
+}
+
+.basket_rasp{
+    display: none;
+}
+.basket_el{
+    width: 50%;
+    display: none;
+    margin-left:  5%;
+    padding-left: 2%;
+    width: 850px;
+    height: 210px;
+    border-top: 4px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke; 
+    z-index: -100;
+}
+.basket_el a{
+    z-index: 2;
+}
+.basket_el a img{
+    width: 150px;
+    height: 150px;
+    padding-right: 20px;
+    
+}
+
+.basket_lab {
+    color: #000;
+    width: 350px;
+    position: relative;
+    bottom: 125px;
+    left:   200px;
+    
+    
+}
+
+
+.basket_cena{
+    display: block;
+    width: 100px;
+    font-size: 25px;
+    position: relative;
+    left: 50%;
+    top: 50px;
+    text-align: right;
+}
+.basket_cena1{
+    display: none;
+    width: 100px;
+    font-size: 25px;
+    position: relative;
+    left: 50%;
+    top: 50px;
+    text-align: right;
+}
+
+.kol{
+    display: block;
+    width: 200px;
+    height: 200px;    
+    position: relative;
+    left:268px;
+    top: 5px; 
+    
+}
+.basket_kol{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    position: relative;
+    left: 25%;
+    top: 100px;
+    z-index: 2;
+}
+
+
+.minus {
+    border: none;
+    width: 48px;
+    height: 38px;
+    font-size: 30px;
+    position: relative;
+    left: 2px;
+    background-color: #fff;
+    
+}
+.plus     {
+    border: none;
+    width: 48px;
+    height: 38px;
+    position: relative;
+    left: 30px;
+    font-size: 30px;
+    background-color: #fff;
+    
+}
+.kol_t{
+    position: relative;
+    left: 15px;
+    bottom: 2px;
+    font-size: 20px; 
+    
+}
+.itog{
+    position: relative;
+    left: 300px;
+    bottom: 35px; 
+    font-size: 20px;
+}
+
+.rasp_c{
+    position: relative;
+    top:35px;
+    font-size: 20px;
+    margin: 0 15px;
+        
+}
+
+.ravn{
+    position: relative;
+    left: 280px;
+    bottom: 35px;
+    font-size: 20px;
+}
+
+.rasp_form{
+    display: block;
+    border: 1px solid black;
+    width: 400px;
+    height: 300px;
+    position: sticky;
+    left: 1000px;
+    bottom: 20%;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px #000;
+    z-index: 2;
+    padding-left: 10px;
+    background: whitesmoke;
+}
+
+
+.basket_itog{
+    display: flex;
+    
+}
+
+.basket_btn{
+    font-size: 25px;
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #000;
+    position: relative;
+    left: 40px;
+    top: 40%;
+}
+
+.basket_itog p,.itog_cena {
+    width: 100px;
+    font-size: 25px;
+    position: relative;
+    top: 100px;
+    margin-left: 40px;
+}
+.itog_cena{
+    text-align: right;
+    position: relative;
+    left:60px;
+     
+}
+/* checkout */
+
+.check{
+    background: whitesmoke; 
+}
+.personal_data{
+    background: #fff;
+    border-radius: 10px;
+    width: 50%;
+    height: 450px;
+    margin: 0 10%;
+    padding: 0 5%;
+    border: 1px solid black;
+}
+.personal_data p{
+    font-size: 14px;
+}
+.personal_data input{
+    width: 200px;
+    height: 40px;
+    margin: 3% 1%;
+    padding: 0 2%;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+.data{
+    float: left;
+}
+.payment_method{
+    background: #fff;
+    border-radius: 10px;
+    width: 50%;
+    height: 250px;
+    margin: 2% 10%;
+    padding: 0 5%;
+    border: 1px solid black;
+}
+.order{
+    background: #fff;
+    border-radius: 10px;
+    width: 350px;
+    height: 300px;
+    margin: 2% 10%;
+    padding: 0 5%;
+    border: 1px solid black;
+    position: sticky;
+    left: 62%;
+    bottom: 11%;
+}
+.btn_oform{
+    font-size: 25px;
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #000;
+    position: relative;
+    right: 27px;
+    top: 30%;
+}
+.order label{
+    
+    font-size: 25px;
+}
+.order_itog{
+    position: relative;
+    right: 25px;
+    top: 50px;
+}
+.order_cena{
+    position: relative;
+    left: 75px;
+    top: 50px;
+}

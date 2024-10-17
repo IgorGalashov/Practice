@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Оформление товара</title>
+    <link rel="stylesheet" href="../css/style.css">
+    
+</head>
+<body class="check">
+    <header>
+       <a href="#" class="logo">Магазин</a>
+        <nav>
+            <ul>
+                
+                <li><button type="button" id='prof'>
+                    <p>Профиль</p>
+                </button></li>
+                <div class="reg" id="reg">
+                     <span class="close">&times;</span>
+                      <form action="#" class="reg_form" id="reg_form"></form>
+                          <div class="container">
+                              <button type="button" class="vkl" id="vkl">Вход</button>
+                              <button type="button" class="vkl" id='vkl1' >Регистрация</button>
+                              <br>
+                                  <div class="container1" id="container1">
+                                     <input type="text" id="name_pols" name="pass" placeholder="Введите имя">
+                                      <input type="text" id="fam_pols" name="pass" placeholder="Введите фамилию">
+                                      <input type="email" id="email" placeholder="Введите электронную почту" required autocomplete="off">
+                                      <input type="password" id="pas" name="pass" placeholder="Введите пароль">
+                                      <button type="button" class="sigUpBtn" id='registr'>Регистрация</button>
+                                  </div>
+                                  <div class="container2" id="container2">
+                                      <input type="email" id="email_v" placeholder="Введите электронную почту" required autocomplete="off">
+                                      <input type="password" id="pas_v" name="pass" placeholder="Введите пароль">
+                                      <button type="button" class="sigUpBtn" id='vhod'>Войти</button>
+                                  </div>
+                                  
+                            </div>
+                            <div class="container3" id="container3">
+                                      <label for="">Пользователь:</label>
+                                      <label for="" id = 'name_log'></label>
+                                      <input type="button" value="Выход" id='exit'>
+                            </div>
+                </div>
+                <li><a href="./assets/servis/basket.html" id='basket' ><p>Корзина</p></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Оформление заказа</h1>
+    <div class="personal_data">
+        <h2>Получатель</h2>
+        <p>Данные нужны для курьера и сообщений об изменениях статуса вашего заказа</p>
+        <br>
+        <div class="fi">
+            <input class="ch_fam" type="text" placeholder="Фамилия">
+            <input class="ch_name" type="text" placeholder="Имя">
+        </div>
+        <div class="data">
+            <input type="text" placeholder="Телефон">
+            <input class="email" type="text" placeholder="Электронная почта">
+            <input class='adr' type="text" placeholder="Введите ваш адрес">
+        </div>
+    </div>
+
+    <div class="order">
+        <h2>Ваш заказ</h2>
+        <label for="" class='order_itog'>Итого</label>
+        <label for="" class='order_cena'>Итого</label>
+        <input class="btn_oform"  type="button" value="Оформить заказ">
+    </div>
+    <div class="usl">
+           <h3>Покупателям</h3>
+            <ul>
+                <li><a href="../kat/drills%20(2).html">Дрели</a></li>
+                <li><a href="../kat/perf.html">Перфораторы</a></li>
+                <li><a href="../kat/ellobz.html">Электролобзики</a></li>
+                <li><a href="../kat/rash.html">Расходники</a></li>
+                
+            </ul>
+        </div>
+    <script src="../js/app4.js"></script>
+</body>
+</html>

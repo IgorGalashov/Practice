@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Корзина</title>
+</head>
+<body>
+    <header>
+       <a href="../../index.html" class="logo">Магазин</a>
+        <nav>
+            <ul>
+                <li><a href="#" id='catalog'>Каталог товаров</a>
+                <ul>
+                    <li><a href="../kat/drills%20(2).html">Дрели</a></li>
+                    <li><a href="../kat/perf.html">Перфораторы</a></li>
+                    <li><a href="../kat/ellobz.html">Электролобзики</a></li>
+                    <li><a href="../kat/rash.html">Расходники</a></li>
+                </ul>
+                </li>
+                <li>
+                   <form action="">
+                     <input type="text" id='search'  name = 'search'  placeholder="Поиск">
+                     <input type="button" class="search" value="Искать">
+                   </form>
+                </li>
+                <li><button type="button" id='prof'>
+                    <p>Профиль</p>
+                </button></li>
+                <div class="reg" id="reg">
+                     <span class="close">&times;</span>
+                      <form action="#" class="reg_form" id="reg_form"></form>
+                          <div class="container">
+                              <button type="button" class="vkl" id="vkl"                        >Вход</button>
+                              <button type="button" class="vkl" id='vkl1' >Регистрация</button>
+                              <br>
+                                  <div class="container1" id="container1">
+                                     <input type="text" id="name_pols" name="pass" placeholder="Введите имя">
+                                      <input type="text" id="fam_pols" name="pass" placeholder="Введите фамилию">
+                                      <input type="email" id="email" placeholder="Введите электронную почту" required autocomplete="off">
+                                      <input type="password" id="pas" name="pass" placeholder="Введите пароль">
+                                      <button type="button" class="sigUpBtn" id='registr'>Регистрация</button>
+                                  </div>
+                                  <div class="container2" id="container2">
+                                      <input type="email" id="email_v" placeholder="Введите электронную почту" required autocomplete="off">
+                                      <input type="password" id="pas_v" name="pass" placeholder="Введите пароль">
+                                      <button type="button" class="sigUpBtn" id='vhod'>Войти</button>
+                                  </div>
+                                  
+                            </div>
+                            <div class="container3" id="container3">
+                                      <label for="">Пользователь:</label>
+                                      <label for="" id = 'name_log'></label>
+                                      <input type="button" value="Выход" id='exit'>
+                            </div>
+                </div>
+                <li><a href="#" id='basket' ><p>Корзина</p></a>
+                <li>
+            </ul>
+        </nav>
+        <div></div>
+    </header>
+    <div class="basket_rasp">
+        <h1>Корзина</h1>
+        <div class="basket_sp">
+            <p class = 'kol_tov'>1 товар</p>
+            <input type="button" class='del_sp' value="Удалить выбранное">
+            <div class="basket_el">
+                <a href="../products/drills/product_1.html">
+                    <img src="../img/drills/bosch1.png" alt="">
+                    <label class='id'>01</label>
+                    <p class="basket_lab">Ударная дрель Bosch GSB 13 RE [0.601.217.100]</p>       
+                </a>
+                <div class="kol">
+                    <p class="basket_cena">11699</p>
+                    <p class="basket_cena1">11699</p>
+                    <div class="basket_kol">
+                        <input type="button" class="minus" value='-'>
+                        <label for="" class="kol_t">1</label>
+                        <input type="button" class="plus" value="+">
+
+                    </div> 
+                </div>
+            </div>
+            <div class="basket_el">
+                <a href="../products/drills/product_2.html">
+                    <img src="../img/drills/d2.png" alt="">
+                    <label class='id'>02</label>
+                    <p class="basket_lab">Аккум. дрель‑шуруповерт BULL SR</p>       
+                </a>
+                <div class="kol">
+                    <p class="basket_cena">4990 </p>
+                    <p class="basket_cena1">4990 </p>
+                    
+                    <div class="basket_kol">
+                        <input type="button" class="minus" value='-'>
+                        <label for="" class="kol_t">1</label>
+                        <input type="button" class="plus" value="+">
+
+                    </div> 
+                </div>
+            </div>
+            <div class="basket_el">
+                <a href="../products/drills/product_3.html">
+                    <img src="../img/drills/d3.png" alt="">
+                    <label class='id'>03</label>
+                    <p class="basket_lab">Дрель ударная ДУ-550 Вихрь </p>       
+                </a>
+                <div class="kol">
+                    <p class="basket_cena">2090 </p>
+                    <p class="basket_cena1">2090 </p>
+                    <div class="basket_kol">
+                        <input type="button" class="minus" value='-'>
+                        <label for="" class="kol_t">1</label>
+                        <input type="button" class="plus" value="+">
+
+                    </div> 
+                </div>
+            </div>
+            <div class="basket_el">
+                <a href="../products/drills/product_4.html">
+                    <img src="../img/drills/4.png" alt="">
+                    <label class='id'>04</label>
+                    <p class="basket_lab">Дрель‑шуруповерт аккумуляторная 
+               Eurolux ДА‑12/2Li</p>       
+                </a>
+                <div class="kol">
+                    <p class="basket_cena">2190</p>
+                    <p class="basket_cena1">2190</p>
+                    <div class="basket_kol">
+                        <input type="button" class="minus" value='-'>
+                        <label for="" class="kol_t">1</label>
+                        <input type="button" class="plus" value="+">
+
+                    </div> 
+                </div>
+            </div>
+            <div class="basket_el">
+                <a href="../products/drills/product_5.html">
+                    <img src="../img/drills/5.png" alt="">
+                    <label class='id'>05</label>
+                    <p class="basket_lab">   Аккумуляторный шуруповерт Elitech 
+               ША 036Л (E2201.024.01) </p>       
+                </a>
+                <div class="kol">
+                    <p class="basket_cena">2321</p>
+                    <p class="basket_cena1">2321</p>
+                    <div class="basket_kol">
+                        <input type="button" class="minus" value='-'>
+                        <label for="" class="kol_t">1</label>
+                        <input type="button" class="plus" value="+">
+
+                    </div> 
+                </div>
+            </div>
+            <div class="basket_el">
+                <a href="../products/drills/product_6.html">
+                    <img src="../img/drills/d6.png" alt="">
+                    <label class='id'>06</label>
+                    <p class="basket_lab">Аккумуляторная отвертка Интерскол 
+               ОА‑3,6Ф (Li‑ion, кейс)</p>       
+                </a>
+                <div class="kol">
+                    <p class="basket_cena">2890</p>
+                    <p class="basket_cena1">2890</p>
+                    <div class="basket_kol">
+                        <input type="button" class="minus" value='-'>
+                        <label for="" class="kol_t">1</label>
+                        <input type="button" class="plus" value="+">
+
+                    </div> 
+                </div>
+            </div>
+            <div class="basket_el">
+                <a href="../products/ellob/product_1.html">
+                    <img src="../img/ellob/l1.png" alt="">
+                    <label class='id'>07</label>
+                    <p class="basket_lab">Электрический лобзик Bosch GST 8000 E [0.601.58H.001]</p>       
+                </a>
+                <div class="kol">
+                    <p class="basket_cena">16847 </p>
+                    <p class="basket_cena1">16847 </p>
+                    <div class="basket_kol">
+                        <input type="button" class="minus" value='-'>
+                        <label for="" class="kol_t">1</label>
+                        <input type="button" class="plus" value="+">
+
+                    </div> 
+                </div>
+            </div>
+            <div class="basket_el">
+                <a href="../img/ellob/l2.png">
+                    <img src="../img/ellob/l2.png" alt="">
+                    <label class='id'>08</label>
+                    <p class="basket_lab">Лобзик ВИХРЬ ЛЭ‑55Б</p>       
+                </a>
+                <div class="kol">
+                    <p class="basket_cena">1568</p>
+                    <p class="basket_cena1">1568</p>
+                    <div class="basket_kol">
+                        <input type="button" class="minus" value='-'>
+                        <label for="" class="kol_t">1</label>
+                        <input type="button" class="plus" value="+">
+
+                    </div> 
+                </div>
+            </div>
+            <div class="basket_el">
+                <a href="../products/ellob/product_3.html">
+                    <img src="../img/ellob/l3.png" alt="">
+                    <label class='id'>09</label>
+                    <p class="basket_lab">Лобзик электрический Л‑55/600 Ресанта</p>       
+                </a>
+                <div class="kol">
+                    <p class="basket_cena">2790</p>
+                    <p class="basket_cena1">2790</p>
+                    <div class="basket_kol">
+                        <input type="button" class="minus" value='-'>
+                        <label for="" class="kol_t">1</label>
+                        <input type="button" class="plus" value="+">
+
+                    </div> 
+                </div>
+            </div>
+            <div class="basket_el">
+                <a href="../products/ellob/product_4.html">
+                    <img src="../img/ellob/l4.png" alt="">
+                    <label class='id'>010</label>
+                    <p class="basket_lab">Лобзик электрический Интерскол МП‑65/540Э</p>       
+                </a>
+                <div class="kol">
+                    <p class="basket_cena">3890</p>
+                    <p class="basket_cena1">3890</p>
+                    <div class="basket_kol">
+                        <input type="button" class="minus" value='-'>
+                        <label for="" class="kol_t">1</label>
+                        <input type="button" class="plus" value="+">
+
+                    </div> 
+                </div>
+            </div>
+            <div class="basket_el">
+                <a href="../products/ellob/product_5.html">
+                    <img src="../img/ellob/l5.png" alt="">
+                    <label class='id'>011</label>
+                    <p class="basket_lab">Лобзик электрический Л‑80/750 Ресанта</p>       
+                </a>
+                <div class="kol">
+                    <p class="basket_cena">3890</p>
+                    <p class="basket_cena1">3890</p>
+                    <div class="basket_kol">
+                        <input type="button" class="minus" value='-'>
+                        <label for="" class="kol_t">1</label>
+                        <input type="button" class="plus" value="+">
+
+                    </div> 
+                </div>
+            </div>
+            <div class="basket_el">
+                <a href="../products/ellob/product_6.html">
+                    <img src="../img/ellob/l6.jpg" alt="">
+                    <label class='id'>012</label>
+                    <p class="basket_lab">Лобзик электрический BULL ST 6501 в чем. (0323066)</p>       
+                </a>
+                <div class="kol">
+                    <p class="basket_cena">5690</p>
+                    <p class="basket_cena1">5690</p>
+                    <div class="basket_kol">
+                        <input type="button" class="minus" value='-'>
+                        <label for="" class="kol_t">1</label>
+                        <input type="button" class="plus" value="+">
+
+                    </div> 
+                </div>
+            </div>
+            <div class="basket_el">
+                <a href="../products/perf/product_1.html">
+                    <img src="../img/perf/p1.png" alt="">
+                    <label class='id'>013</label>
+                    <p class="basket_lab">Перфоратор Bosch GBH 2‑26 DRE [0611253708]</p>       
+                </a>
+                <div class="kol">
+                    <p class="basket_cena">29649</p>
+                    <p class="basket_cena1">29649</p>
+                    <div class="basket_kol">
+                        <input type="button" class="minus" value='-'>
+                        <label for="" class="kol_t">1</label>
+                        <input type="button" class="plus" value="+">
+
+                    </div> 
+                </div>
+            </div>
+            <div class="basket_el">
+                <a href="../products/perf/product_2.html">
+                    <img src="../img/perf/p2.jpg" alt="">
+                    <label class='id'>014</label>
+                    <p class="basket_lab">Перфоратор ВИХРЬ П‑750</p>       
+                </a>
+                <div class="kol">
+                    <p class="basket_cena">3932</p>
+                    <p class="basket_cena1">3932</p>
+                    <div class="basket_kol">
+                        <input type="button" class="minus" value='-'>
+                        <label for="" class="kol_t">1</label>
+                        <input type="button" class="plus" value="+">
+
+                    </div> 
+                </div>
+            </div>
+            <div class="basket_el">
+                <a href="../products/perf/product_3.html">
+                    <img src="../img/perf/p3.png" alt="">
+                    <label class='id'>015</label>
+                    <p class="basket_lab">Перфоратор Интерскол П‑18/450ЭР (кейс), SDS‑Plus</p>       
+                </a>
+                <div class="kol">
+                    <p class="basket_cena">4190</p>
+                    <p class="basket_cena1">4190</p>
+                    <div class="basket_kol">
+                        <input type="button" class="minus" value='-'>
+                        <label for="" class="kol_t">1</label>
+                        <input type="button" class="plus" value="+">
+
+                    </div> 
+                </div>
+            </div>
+            <div class="basket_el">
+                <a href="../products/perf/product_4.html">
+                   <label class='id'>016</label>
+                    <img src="../img/perf/p4.jpg" alt="">
+                    <p class="basket_lab">Перфоратор WORTEX LX RH 2628</p>       
+                </a>
+                <div class="kol">
+                    <p class="basket_cena">5360</p>
+                    <p class="basket_cena1">5360</p>
+                    <div class="basket_kol">
+                        <input type="button" class="minus" value='-'>
+                        <label for="" class="kol_t">1</label>
+                        <input type="button" class="plus" value="+">
+
+                    </div> 
+                </div>
+            </div>
+            <div class="basket_el">
+                <a href="../products/perf/product_5.html">
+                    <img src="../img/perf/p5.png" alt="">
+                    <label class='id'>017</label>
+                    <p class="basket_lab">Аккумуляторный перфоратор Интерскол ПА‑18/18Л2</p>       
+                </a>
+                <div class="kol">
+                    <p class="basket_cena"> 6770</p>
+                    <p class="basket_cena1"> 6770</p>
+                    <div class="basket_kol">
+                        <input type="button" class="minus" value='-'>
+                        <label for="" class="kol_t">1</label>
+                        <input type="button" class="plus" value="+">
+
+                    </div> 
+                </div>
+            </div>
+            <div class="basket_el">
+                <a href="../products/perf/product_6.html">
+                    <img src="../img/perf/p6.png" alt="">
+                    <label class='id'>018</label>
+                    <p class="basket_lab">Аккумуляторный перфоратор Elitech ПА 18БЛМ (Е2205.001.00)</p>       
+                </a>
+                <div class="kol">
+                    <p class="basket_cena">11205</p>
+                    <p class="basket_cena1">11205</p>
+                    <div class="basket_kol">
+                        <input type="button" class="minus" value='-'>
+                        <label for="" class="kol_t">1</label>
+                        <input type="button" class="plus" value="+">
+
+                    </div> 
+                </div>
+            </div>
+            <div class="basket_el">
+                <a href="../products/rash/1.html">
+                    <img src="../img//rash/bit/bt1.jpg" alt="">
+                    <label class='id'>019</label>
+                    <p class="basket_lab">Набор сверл и бит Dexter 100-00584, 33 предм.</p>       
+                </a>
+                <div class="kol">
+                    <p class="basket_cena">1095</p>
+                    <p class="basket_cena1">1095</p>
+                    <div class="basket_kol">
+                        <input type="button" class="minus" value='-'>
+                        <label for="" class="kol_t">1</label>
+                        <input type="button" class="plus" value="+">
+
+                    </div> 
+                </div>
+            </div>
+            <div class="basket_el">
+                <a href="../products/rash/2.html">
+                    <img src="../img/rash/bit/bt2.jpg" alt="">
+                    <label class='id'>020</label>
+                    <p class="basket_lab">Набор бит магнитных Makita E-12011, 10 шт.</p>       
+                </a>
+                <div class="kol">
+                    <p class="basket_cena">748</p>
+                    <p class="basket_cena1">748</p>
+                    <div class="basket_kol">
+                        <input type="button" class="minus" value='-'>
+                        <label for="" class="kol_t">1</label>
+                        <input type="button" class="plus" value="+">
+
+                    </div> 
+                </div>
+            </div>
+            <div class="basket_el">
+                <a href="../products/rash/3.html">
+                    <img src="../img/rash/bit/bt3.jpg" alt="">
+                    <label class='id'>021</label>
+                    <p class="basket_lab">Бита крестовая ударная магнитная Rage by Vira 554125 PH2x50 мм, 2 шт.</p>       
+                </a>
+                <div class="kol">
+                    <p class="basket_cena">113</p>
+                    <p class="basket_cena1">113</p>
+                    <div class="basket_kol">
+                        <input type="button" class="minus" value='-'>
+                        <label for="" class="kol_t">1</label>
+                        <input type="button" class="plus" value="+">
+
+                    </div> 
+                </div>
+            </div>
+            <div class="basket_el">
+                <a href="../products/rash/4.html">
+                    <img src="../img/rash/bur/b1.jpg" alt="">
+                    <label class='id'>022</label>
+                    <p class="basket_lab">Зубило по бетону SDS-plus Dexter 22x250 мм</p>       
+                </a>
+                <div class="kol">
+                    <p class="basket_cena">218</p>
+                    <p class="basket_cena1">218</p>
+                    <div class="basket_kol">
+                        <input type="button" class="minus" value='-'>
+                        <label for="" class="kol_t">1</label>
+                        <input type="button" class="plus" value="+">
+
+                    </div> 
+                </div>
+            </div>
+            <div class="basket_el">
+                <a href="../products/rash/5.html">
+                    <img src="../img/rash/bur/b2.jpg" alt="">
+                    <label class='id'>023</label>
+                    <p class="basket_lab">Зубило по бетону SDS-plus Dexter 40x250 мм</p>       
+                </a>
+                <div class="kol">
+                    <p class="basket_cena">190</p>
+                    <p class="basket_cena1">190</p>
+                    <div class="basket_kol">
+                        <input type="button" class="minus" value='-'>
+                        <label for="" class="kol_t">1</label>
+                        <input type="button" class="plus" value="+">
+
+                    </div> 
+                </div>
+            </div>
+            <div class="basket_el">
+                <a href="../products/rash/6.html">
+                    <img src="../img/rash/bur/b3.jpg" alt="">
+                    <label class='id'>024</label>
+                    <p class="basket_lab">Набор буров и долот Kranz KR-91-0409, 
+              2 485,42 шт</p>       
+                </a>
+                <div class="kol">
+                    <p class="basket_cena">305</p>
+                    <p class="basket_cena1">305</p>
+                    <div class="basket_kol">
+                        <input type="button" class="minus" value='-'>
+                        <label for="" class="kol_t">1</label>
+                        <input type="button" class="plus" value="+">
+
+                    </div> 
+                </div>
+            </div>
+            <div class="basket_el">
+                <a href="../products/rash/7.html">
+                    <img src="../img/rash/pilk/p1.jpg" alt="">
+                    <label class='id'>025</label>
+                    <p class="basket_lab">Пилка для лобзика по дереву T344D быстрый рез</p>       
+                </a>
+                <div class="kol">
+                    <p class="basket_cena">62</p>
+                    <p class="basket_cena1">62</p>
+                    <div class="basket_kol">
+                        <input type="button" class="minus" value='-'>
+                        <label for="" class="kol_t">1</label>
+                        <input type="button" class="plus" value="+">
+
+                    </div> 
+                </div>
+            </div>
+            <div class="basket_el">
+                <a href="../products/rash/9.html">
+                    <img src="../img/rash/pilk/p2.jpg" alt="">
+                    <label class='id'>026</label>
+                    <p class="basket_lab">Набор пилок для электролобзика по 
+              металлу и дереву Dexter HL-27, 10 шт.</p>       
+                </a>
+                <div class="kol">
+                    <p  class="basket_cena">455</p>
+                    <p  class="basket_cena1">455</p>
+                    <div class="basket_kol">
+                        <input type="button" class="minus" value='-'>
+                        <label for="" class="kol_t">1</label>
+                        <input type="button" class="plus" value="+">
+
+                    </div> 
+                </div>
+            </div>
+            <div class="basket_el">
+                <a href="../products/rash/8.html">
+                    <img src="../img/rash/pilk/p3.jpg" alt="">
+                    <label class='id'>027</label>
+                    <p class="basket_lab">Набор пилок для лобзика универсальных 
+              Elitech 1820.086900, 6 шт.</p>       
+                </a>
+                <div class="kol">
+                    <p class="basket_cena">387</p>
+                    <p class="basket_cena1">387</p>
+                    <div class="basket_kol">
+                        <input type="button" class="minus" value='-'>
+                        <label for="" class="kol_t">1</label>
+                        <input type="button" class="plus" value="+">
+
+                    </div> 
+                </div>
+            </div>
+            <div class="basket_el">
+                <a href="../products/rash/10.html">
+                    <img src="../img//rash/sver/s1.jpg" alt="">
+                    <label class='id'>028</label>
+                    <p class="basket_lab">Сверло копьевидное по стеклу и керамике 6x71 мм</p>       
+                </a>
+                <div class="kol">
+                    <p class="basket_cena">78</p>
+                    <p class="basket_cena1">78</p>
+                    <div class="basket_kol">
+                        <input type="button" class="minus" value='-'>
+                        <label for="" class="kol_t">1</label>
+                        <input type="button" class="plus" value="+">
+
+                    </div> 
+                </div>
+            </div>
+            <div class="basket_el">
+                <a href="../products/rash/11.html">
+                    <img src="../img/rash/sver/s2.jpg" alt="">
+                    <label class='id'>029</label>
+                    <p class="basket_lab">Набор сверл по дереву Зубр Мастер 29605-H10, 10 шт</p>       
+                </a>
+                <div class="kol">
+                    <p class="basket_cena">737</p>
+                    <p class="basket_cena1">737</p>
+                    <div class="basket_kol">
+                        <input type="button" class="minus" value='-'>
+                        <label for="" class="kol_t">1</label>
+                        <input type="button" class="plus" value="+">
+
+                    </div> 
+                </div>
+            </div>
+            <div class="basket_el">
+                <a href="../products/rash/12.html">
+                    <img src="../img/rash/sver/s3.jpg" alt="">
+                    <label class='id'>030</label>
+                    <p class="basket_lab">Набор сверл и бит Dewalt DT70749T-QZ, 
+              25 предметов</p>       
+                </a>
+                <div class="kol">
+                    <p  class="basket_cena">7290</p>
+                    <p  class="basket_cena1">7290</p>
+                    <div class="basket_kol">
+                        <input type="button" class="minus" value='-'>
+                        <label for="" class="kol_t">1</label>
+                        <input type="button" class="plus" value="+">
+
+                    </div> 
+                </div>
+            </div>
+           
+        </div>
+        <div class="rasp_form">
+                <form action="" class="basket_itog">
+                    <p>Итого</p>
+                    <p class='itog_cena'>11 699</p>
+                </form>
+                <a href = "checkout.html" class="basket_btn">Перейти к оформлению</a> 
+         </div>
+    </div>
+    
+    
+    
+    <div class="cont_search">
+               <h2>Итог поиска</h2>
+             <div class="about">
+                 <div class="about_item_1">
+                     <div class="about_img">
+                      <a href="../products/drills/product_1.html"><img src="../img/drills/bosch1.png" alt="">
+                       <p id = 'name'>Ударная дрель Bosch GSB 13 RE</p><p> <br>
+                            [0.601.217.100] <br>
+
+                      <br>
+                      <br>
+                      11 699 RUB</p>
+                      </a>
+                     </div>
+                 </div>
+                 <div class="about_item_1">
+                     <div class="about_img">
+                     <a href="../products/drills/product_2.html"><img src="../img/drills/d2.png" alt="">
+                      <p id = 'name' >Аккум. дрель‑шуруповерт BULL SR </p><p> <br>
+                         1804 в кор. SOLO БЕСЩЕТ., Импульс. <br>
+                         18 В, 45 Н*м (1329419)
+                      <br>
+                      <br>
+                      4 990 RUB</p>
+                     </a>
+                     </div>
+                 </div>
+                 <div class="about_item_1">
+                     <div class="about_img">
+                      <a href="../products/drills/product_3.html"><img src="../img/drills/d3.png" alt="">
+                      <p id = 'name' id = 'name'>Дрель ударная ДУ‑550 Вихрь</p><p>
+                      <br>
+                      <br>
+                      2 090 RUB</p>
+                      </a>
+                     </div>
+                 </div>
+                 <div class="about_item_1">
+                     <div class="about_img">
+                      <a href="../products/drills/product_4.html"><img src="../img/drills/4.png" alt="">
+                       <p id = 'name' id = 'name'>Дрель‑шуруповерт аккумуляторная Eurolux ДА‑12/2Li</p><p>
+                      <br>
+                      <br>
+                      2 190 RUB</p>
+                      </a>
+                     </div>
+                 </div>
+             </div>
+                 
+             <div class="about">
+                 <div class="about_item_1">
+                     <div class="about_img">
+                      <a href="../products/drills/product_5.html"><img src="../img/drills/5.png" alt="">
+                       <p id = 'name' id = 'name'>Аккумуляторный шуруповерт Elitech ША 036Л (E2201.024.01)</p><p>
+                      <br>
+                      <br>
+                      2 321 RUB</p>
+                      </a>
+                     </div>
+                 </div>
+                 <div class="about_item_1">
+                     <div class="about_img">
+                     <a href="../products/drills/product_6.html"><img src="../img/drills/d6.png" alt="">
+                      <p id = 'name' id = 'name'>Аккумуляторная отвертка Интерскол ОА‑3,6Ф (Li‑ion, кейс)</p><p>
+                      <br>
+                      <br>
+                      2 890 RUB</p>
+                     </a>
+                     </div>
+                 </div>
+                 <div class="about_item_1">
+                     <div class="about_img">
+                      <a href="../products/perf/product_1.html"><img src="../img/perf/p1.png" alt="">
+                      <p id = 'name' id = 'name'>Перфоратор Bosch GBH 2‑26 DRE</p><p> [0611253708]
+                      <br>
+                      <br>
+                      29 649 RUB</p>
+                      </a>
+                     </div>
+                 </div>
+                 <div class="about_item_1">
+                     <div class="about_img">
+                      <a href="../products/perf/product_2.html"><img src="../img/perf/p2.jpg" alt="">
+                       <p id = 'name' id = 'name'>Перфоратор ВИХРЬ П‑750</p><p>
+                      <br>
+                      <br>
+                      3 932 RUB</p>
+                      </a>
+                     </div>
+                 </div>
+             </div>
+             
+             <div class="about">
+                 <div class="about_item_1">
+                     <div class="about_img">
+                      <a href="../products/perf/product_3.html"><img src="../img/perf/p3.png" alt="">
+                       <p id = 'name' id = 'name'>Перфоратор Интерскол П‑18/450ЭР </p><p>(кейс), SDS‑Plus
+
+                      <br>
+                      <br>
+                      4 190 RUB</p>
+                      </a>
+                     </div>
+                 </div>
+                 <div class="about_item_1">
+                     <div class="about_img">
+                     <a href="../products/perf/product_4.html">
+                     <img src="../img/perf/p4.jpg" alt="">
+                      <p id = 'name' id = 'name'>Перфоратор WORTEX LX RH 2628</p><p>
+                      <br>
+                      <br>
+                      5 360 RUB</p>
+                     </a>
+                     </div>
+                 </div>
+                 <div class="about_item_1">
+                     <div class="about_img">
+                      <a href="../products/perf/product_5.html"><img src="../img/perf/p5.png" alt="">
+                      <p id = 'name'>Аккумуляторный перфоратор Интерскол ПА‑18/18Л2</p><p>
+                      <br>
+                      <br>
+                      6 770 RUB</p>
+                      </a>
+                     </div>
+                 </div>
+                 <div class="about_item_1">
+                     <div class="about_img">
+                      <a href="../products/perf/product_6.html"><img src="../img/perf/p6.png" alt="">
+                       <p id = 'name'>Аккумуляторный перфоратор Elitech ПА 18БЛМ</p><p> (Е2205.001.00)
+                      <br>
+                      <br>
+                      11 205 RUB</p>
+                      </a>
+                     </div>
+                 </div>
+             </div>
+            
+             <div class="about">
+                 <div class="about_item_1">
+                     <div class="about_img">
+                      <a href="../products/ellob/product_1.html"><img src="../img/ellob/l1.png" alt="">
+                       <p id = 'name'>Электрический лобзик Bosch GST 8000 E</p><p> [0.601.58H.001]
+
+                      <br>
+                      <br>
+                       16 847 RUB</p>
+                      </a>
+                     </div>
+                 </div>
+                 <div class="about_item_1">
+                     <div class="about_img">
+                     <a href="../products/ellob/product_2.html"><img src="../img/ellob/l2.png" alt="">
+                      <p id = 'name'>Лобзик ВИХРЬ ЛЭ‑55Б</p><p>
+                      <br>
+                      <br>
+                      1 568 RUB</p>
+                     </a>
+                     </div>
+                 </div>
+                 <div class="about_item_1">
+                     <div class="about_img">
+                      <a href="../products/ellob/product_3.html"><img src="../img/ellob/l3.png" alt="">
+                      <p id = 'name'>Лобзик электрический Л‑55/600 Ресанта</p><p>
+                      <br>
+                      <br>
+                      2 790 RUB</p>
+                      </a>
+                     </div>
+                 </div>
+                 <div class="about_item_1">
+                     <div class="about_img">
+                      <a href="../products/ellob/product_4.html"><img src="../img/ellob/l4.png" alt="">
+                       <p id = 'name'>Лобзик электрический Интерскол МП‑65/540Э</p><p>
+                      <br>
+                      <br>
+                      3 890 RUB</p>
+                      </a>
+                     </div>
+                 </div>
+             </div>
+             
+             <div class="about">
+                 <div class="about_item_1">
+                     <div class="about_img">
+                      <a href="../products/ellob/product_5.html"><img src="../img/ellob/l5.png" alt="">
+                       <p id = 'name'>Лобзик электрический Л‑80/750 Ресанта</p><p>
+
+                      <br>
+                      <br>
+                      3 890 RUB</p>
+                      </a>
+                     </div>
+                 </div>
+                 <div class="about_item_1">
+                     <div class="about_img">
+                     <a href="../products/ellob/product_6.html"><img src="../img/ellob/l6.jpg" alt="">
+                      <p id = 'name'>Лобзик электрический BULL ST 6501</p><p> в чем. (0323066)
+                      <br>
+                      <br>
+                      5 690 RUB</p>
+                     </a>
+                     </div>
+                 </div>
+                 <div class="about_item_1">
+                     <div class="about_img">
+                      <a href="../products/rash/1.html">
+                      <img src="../img/rash/bit/bt1.jpg" alt="">
+                      <p id = 'name'>Набор сверл и бит Dexter 100-00584</p><p>, 33 предм.
+                      <br>
+                      <br>
+                      1 095 RUB</p>
+                      </a>
+                     </div>
+                 </div>
+                 <div class="about_item_1">
+                     <div class="about_img">
+                      <a href="../products/rash/2.html">
+                      <img src="../img/rash/bit/bt2.jpg" alt="">
+                       <p id = 'name'>Набор бит магнитных Makita E-12011</p><p>, 10 шт.
+                      <br>
+                      <br>
+                      748 RUB</p>
+                      </a>
+                     </div>
+                 </div>
+             </div>
+                
+             <div class="about">
+                 <div class="about_item_1">
+                     <div class="about_img">
+                      <a href="../products/rash/3.html">
+                      <img src="../img/rash/bit/bt3.jpg" alt="">
+                       <p id = 'name'>Бита крестовая ударная магнитная Rage by Vira 554125 PH2x50 мм, 2 шт.</p><p>
+
+                      <br>
+                      <br>
+                      113 ₽/шт</p>
+                      </a>
+                     </div>
+                 </div>
+                 <div class="about_item_1">
+                     <div class="about_img">
+                     <a href="../products/rash/4.html">
+                     <img src="../img/rash/bur/b1.jpg" alt="">
+                      <p id = 'name'>Зубило по бетону SDS-plus Dexter 22x250 мм</p><p>
+                      <br>
+                      <br>
+                      218 RUB</p>
+                     </a>
+                     </div>
+                 </div>
+                 <div class="about_item_1">
+                     <div class="about_img">
+                      <a href="../products/rash/5.html">
+                      <img src="../img/rash/bur/b2.jpg" alt="">
+                      <p id = 'name'>Зубило по бетону SDS-plus Dexter 40x250 мм</p><p>
+                      <br>
+                      <br>
+                      190 RUB</p>
+                      </a>
+                     </div>
+                 </div>
+                 <div class="about_item_1">
+                     <div class="about_img">
+                      <a href="../products/rash/6.html">
+                      <img src="../img/rash/bur/b3.jpg" alt="">
+                       <p id = 'name'>Набор буров и долот Kranz KR-91-0409</p><p>, 
+                          2 485,42 шт
+                      <br>
+                      <br>
+                      305 RUB</p>
+                      </a>
+                     </div>
+                 </div>
+             </div>
+             
+             <div class="about">
+                 <div class="about_item_1">
+                     <div class="about_img">
+                      <a href="../products/rash/7.html">
+                      <img src="../img/rash/pilk/p1.jpg" alt="">
+                       <p id = 'name'>Пилка для лобзика по дереву T344D</p><p> 
+                          быстрый рез
+
+                      <br>
+                      <br>
+                      62 ₽/шт</p>
+                      </a>
+                     </div>
+                 </div>
+                 <div class="about_item_1">
+                     <div class="about_img">
+                     <a href="../products/rash/8.html">
+                     <img src="../img/rash/pilk/p3.jpg" alt="">
+                      <p id = 'name'>Набор пилок для лобзика универсальных</p><p> 
+                         Elitech 1820.086900, 6 шт.
+                      <br>
+                      <br>
+                      387 RUB</p>
+                     </a>
+                     </div>
+                 </div>
+                 <div class="about_item_1">
+                     <div class="about_img">
+                      <a href="../products/rash/9.html">
+                      <img src="../img/rash/pilk/p2.jpg" alt="">
+                      <p id = 'name'>Набор пилок для электролобзика по</p><p> 
+                         металлу и дереву Dexter HL-27, 10 шт.
+                      <br>
+                      <br>
+                      455 RUB</p>
+                      </a>
+                     </div>
+                 </div>
+                 <div class="about_item_1">
+                     <div class="about_img">
+                      <a href="../products/rash/10.html">
+                      <img src="../img/rash/sver/s1.jpg" alt="">
+                       <p id = 'name'>Сверло копьевидное по стеклу и керамике 6x71 мм</p><p>
+                      <br>
+                      <br>
+                      78 RUB</p>
+                      </a>
+                     </div>
+                 </div>
+             </div>
+                
+             <div class="about" id="about_1">
+                 <div class="about_item_1">
+                     <div class="about_img">
+                      <a href="../products/rash/11.html">
+                      <img src="../img/rash/sver/s2.jpg" alt="">
+                       <p id = 'name'>Набор сверл по дереву Зубр Мастер</p><p> 29605-      H10, 10 шт
+
+                      <br>
+                      <br>
+                      737 ₽/шт</p>
+                      </a>
+                     </div>
+                 </div>
+                 <div class="about_item_1" id="about_item_1">
+                     <div class="about_img">
+                     <a href="../products/rash/12.html">
+                     <img src="../img/rash/sver/s3.jpg" alt="">
+                      <p id = 'name'>Набор сверл и бит Dewalt DT70749T-QZ</p><p>, 
+              25 предметов
+                      <br>
+                      <br>
+                      7 290 RUB</p>
+                     </a>
+                     </div>
+                 </div>
+                 
+             </div>  
+        </div>
+    <div class="usl">
+           <h3>Покупателям</h3>
+            <ul>
+                <li><a href="../kat/drills%20(2).html">Дрели</a></li>
+                <li><a href="../kat/perf.html">Перфораторы</a></li>
+                <li><a href="../kat/ellobz.html">Электролобзики</a></li>
+                <li><a href="../kat/rash.html">Расходники</a></li>
+                
+            </ul>
+        </div>
+    
+   <script src="../js/app2.js"></script>
+</body>
+</html>
